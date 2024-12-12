@@ -1,20 +1,34 @@
 const Navigation = () => {
   return (
-    <nav className="flex justify-between items-center px-8 py-4 bg-white shadow-sm">
-      <div className="flex items-center gap-2">
-        <span className="text-2xl">✈️</span>
-        <h1 className="text-xl font-semibold">Travel Planner</h1>
-      </div>
+    <nav className="fixed top-0 w-full bg-white shadow-sm z-50">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex justify-between h-16">
+          {/* Logo & Brand */}
+          <div className="flex items-center">
+            <span className="text-2xl">✈️</span>
+            <span className="ml-2 text-xl font-semibold">Travel Planner</span>
+          </div>
 
-      <div className="flex-1 max-w-md px-4">
-        <input
-          type="text"
-          placeholder="Search destinations..."
-          className="w-full px-4 py-2 rounded-full border focus:outline-none focus:border-blue-500"
-        />
-      </div>
+          {/* Search Bar */}
+          <div className="flex-1 flex items-center justify-center px-2 lg:ml-6 lg:justify-end">
+            <div className="max-w-lg w-full lg:max-w-xs">
+              <input
+                type="search"
+                placeholder="Search destinations..."
+                className="w-full rounded-md border border-gray-300 bg-white py-2 px-4 text-sm 
+                         focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+              />
+            </div>
+          </div>
 
-      <div className="text-2xl cursor-pointer">👤</div>
+          {/* Profile */}
+          <div className="flex items-center">
+            <button className="p-2 rounded-full hover:bg-gray-100">
+              <span className="text-2xl">👤</span>
+            </button>
+          </div>
+        </div>
+      </div>
     </nav>
   );
 };
