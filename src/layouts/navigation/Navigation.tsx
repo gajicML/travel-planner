@@ -6,7 +6,7 @@ const Navigation = () => {
           {/* Logo & Brand */}
           <div className="flex items-center">
             <span className="text-2xl">✈️</span>
-            <span className="ml-2 text-xl font-semibold">Travel Planner</span>
+            <span className="ml-2 text-xl font-semibold text-gray-800">Travel Planner</span>
           </div>
 
           {/* Search Bar */}
@@ -15,8 +15,8 @@ const Navigation = () => {
               <input
                 type="search"
                 placeholder="Search destinations..."
-                className="w-full rounded-md border border-gray-300 bg-white py-2 px-4 text-sm 
-                         focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                className="w-full rounded-md border border-gray-300 bg-white py-2 px-4 text-sm text-gray-700
+                       focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
               />
             </div>
           </div>
